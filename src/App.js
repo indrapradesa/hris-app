@@ -1,15 +1,22 @@
 import './App.css';
-import Sidebar from './components/Sidebar';
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import EmployeeShow from './pages/Employee/EmployeeShow';
+import EmployeeCreate from './pages/Employee/EmployeeCreate';
+import EmployeeDetail from './pages/Employee/EmployeeDetail';
+import { BasicTable } from './components/BasicTable';
+// import Sidebar from './components/Sidebar';
 
 function App() {
 
   return (
-    <div className="flex">
-      <Sidebar />
-      <div className="p-7 text-2xl font-semibold flex-1 h-screen">
-        <h1>Home Paage</h1>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/employee" element={<EmployeeShow />} />
+        <Route path="/employee/create" element={<EmployeeCreate />} />
+        <Route path="/employee/detail" element={<EmployeeDetail />} />
+      </Routes>
+    </Router>
   );
 }
 
