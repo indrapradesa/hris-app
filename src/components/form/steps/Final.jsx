@@ -25,7 +25,7 @@ export default function Final({onChange, formValues}) {
             </div>
             <div className="flex justify-items-center content-center items-center">
                 <label htmlFor="Terms" className="block text-gray-700 text-sm font-bold mb-2 pr-4">Terms</label>
-                <input type="checkbox" id="terms" name="terms" value={formValues.terms} onChange={onChange}></input>
+                <input type="checkbox" id="terms" name="terms" value={formValues.terms} ponChange={onChange}></input>
             </div>
         </form>
     </div>

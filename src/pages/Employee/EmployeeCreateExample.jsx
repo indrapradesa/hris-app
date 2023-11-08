@@ -66,7 +66,7 @@ const EmployeeCreateExample = () => {
                 return <Account formValues={values} onChange={onChange} />
             }
             case 1:{
-                return <Detail formValues={values} onChange={onChange} option={citys}/>
+                return <Detail formValues={values} onChange={onChange} />
             }
             case 2:{
                 return <Final formValues={values} onChange={onChange} />
